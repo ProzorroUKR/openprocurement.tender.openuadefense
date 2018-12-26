@@ -2,13 +2,11 @@
 from openprocurement.api.utils import (
     json_view,
     context_unpack,
-    get_now,
 )
 from openprocurement.tender.core.utils import (
     save_tender,
     apply_patch,
-    optendersresource,
-    calculate_business_date
+    optendersresource
 )
 from openprocurement.tender.core.validation import validate_tender_status_update_in_terminated_status
 from openprocurement.tender.belowthreshold.views.tender import TenderResource

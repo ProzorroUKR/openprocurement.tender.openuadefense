@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 from openprocurement.api.utils import get_now, raise_operation_error
 from openprocurement.tender.core.utils import (
-    optendersresource, calculate_business_date
+    optendersresource
 )
 from openprocurement.tender.openua.views.tender_document import TenderUaDocumentResource as TenderDocumentResource
 from openprocurement.tender.openuadefense.constants import TENDERING_EXTRA_PERIOD
+from openprocurement.tender.openuadefense.utils import calculate_business_date
 
 
 @optendersresource(name='aboveThresholdUA.defense:Tender Documents',

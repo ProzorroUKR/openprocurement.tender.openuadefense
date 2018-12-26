@@ -16,8 +16,7 @@ from openprocurement.tender.core.validation import (
 from openprocurement.tender.core.utils import (
     save_tender,
     apply_patch,
-    optendersresource,
-    calculate_business_date
+    optendersresource
 )
 from openprocurement.tender.belowthreshold.utils import (
     check_tender_status
@@ -29,6 +28,7 @@ from openprocurement.tender.openua.views.complaint import (
     TenderUaComplaintResource as TenderComplaintResource
 )
 from openprocurement.tender.openuadefense.validation import validate_submit_claim_time
+from openprocurement.tender.openuadefense.utils import calculate_business_date
 
 
 @optendersresource(name='aboveThresholdUA.defense:Tender Complaints',
